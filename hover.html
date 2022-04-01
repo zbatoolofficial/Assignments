@@ -1,0 +1,46 @@
+<html>
+</head>
+<title>Hover sheet</title>
+</head>
+<body>
+    <style>
+        button:hover~ul{
+            background-color: rgb(123, 123, 187);
+            display: block;
+        }
+        ul{
+             background-color: yellow; 
+            display: none;
+            transition: 2s all linear;
+
+        }
+       
+    </style>
+    <button>Hover Me</button>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+    </ul>
+     <style>
+     .hover {
+            width: 20%;
+            height: 20vh;
+            background-color: blue;
+            transition: 2s all linear;
+        } 
+
+        .hover:hover {
+             background-color: yellow; 
+             width: 40%; 
+             height:20vh;
+             transform: rotate(90deg); 
+
+
+        }
+
+    </style> 
+     <div class="hover">
+<h1>Hello</h1>
+    </div> 
+</body>
+</html>
