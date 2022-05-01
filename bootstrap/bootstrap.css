@@ -23,3 +23,12 @@
     color: aliceblue;
   
 }
+.col-md-4 p{
+    color: grey;
+}
+.card-title,h1{
+    font-size: 60px;
+}
+.card{
+    height: fit-content;
+}
