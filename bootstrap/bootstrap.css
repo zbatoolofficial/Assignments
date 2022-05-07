@@ -1,5 +1,5 @@
 
-.lihover:hover{
+.liover:hover{
     color: 	#ffc107;
     cursor: pointer; 
     
@@ -23,6 +23,13 @@
    
     border-bottom: dotted 4px rgba(26,47,51,.7);
     opacity: .3;
+}
+.tst-spacer2 {
+    height: 0;
+
+
+    border-bottom: dotted 4px rgba(234, 239, 240, 0.7);
+    
 }
 .nav-item a{
     color: aliceblue;
