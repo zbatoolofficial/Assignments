@@ -4,7 +4,7 @@
     cursor: pointer; 
     
 }
-.liover:hover{
+.lihover:hover{
    color:#ffc107;
     cursor: pointer;
      border-bottom:3px solid #ffc107;
@@ -35,7 +35,7 @@
     color: aliceblue;
   
 }
-.col-md-4 p{
+/* .col-md-4 p{
     color: grey;
 }
 .card-title,h1{
@@ -43,4 +43,4 @@
 }
 .card{
     height: fit-content;
-}
+} */
