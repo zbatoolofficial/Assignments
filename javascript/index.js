@@ -5,8 +5,8 @@
 function add(){
     let a=6; 
     let b=3;
-    let z=a+b
-    console.log(z)
+    let z=a+b;
+    console.log(z);
 }
 function sub(){
     let a=6;
@@ -36,3 +36,49 @@ if(q==0){
 }else {
     alert('false');
 }
+// 
+
+    function add(){
+        var x=3;
+        var y=5;
+        var z=x+y;
+        document.write(z);
+    }
+    function sub(){
+        var x=4;
+        var y=6;
+        var z=x-y;
+        document.write(z);
+    }
+    function mul(){
+        var x=1;
+        var y=8;
+        var z=x*y;
+        document.write(z);
+    }
+    function divide(){
+        var x=3;
+        var y=5;
+        var z=x/y;
+        document.write(z);
+    }
+    function mode(){
+        let x=3;
+        let y=5;
+        let z=x%y;
+        document.write(z);
+        
+    }
+    function pow(){
+        let x=3;
+        
+        let z=Math.pow(x,2);
+        document.write(z);
+    }
+    function exponent(){
+        let x=3;
+        
+        let z=x**2;
+        document.write(z);
+    }
+// 
