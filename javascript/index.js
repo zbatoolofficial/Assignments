@@ -82,3 +82,27 @@ if(q==0){
         document.write(z);
     }
 // 
+let m=prompt("Enter Your Total Number");
+let n=prompt("Enter Your Total Number");
+m=parseInt(m);
+n=parseInt(n);
+let result=n/m*100;
+if (result>33){
+    document.write("pass")
+}else{
+    document.write("fail")
+}
+document.write(n/m*100);
+document.write(typeof m);
+document.write(typeof n);
+let day = prompt("ENTER DAY NUMBER");
+    day = parseInt(day);
+    switch (day) {
+        case 1:
+            document.write("Monday");
+            break;
+        case 2:
+            document.write("Tuesday");
+            break;
+    }
+    // 

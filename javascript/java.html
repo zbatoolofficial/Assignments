@@ -3,9 +3,18 @@
         <title>document</title>
          <script src="index.js"> </script>
      </head>
-    <body>
-       <h1></h1>
+    <body style="background-color:darkorange;">
+        <p id="demo"></p>
+
+        <script>
+        document.getElementById("demo").innerHTML = 5 + 6;
+        </script>
+        <center>
+        <h1>JAVASCRIPT</h1>
+        <h3>JavaScript Statements</h3>
+        <p>Values, Operators, Expressions, Keywords, and Comments.</p>
 <button onclick="add()">Add</button>
+<p>A Paragraph.</p>
 <button ondblclick="sub()">Submit</button>
        <!--  -->
        <h1>JavaScript Variables</h1>
@@ -18,20 +27,20 @@
 <button onclick="pow()"> power</button>
 <button onclick="exponent()"> Exponentiation</button>
 <!--  -->
-<script>
-    let a=prompt("Enter Your Total Number");
-    let b=prompt("Enter Your Total Number");
-    a=parseInt(a);
-    b=parseInt(b);
-    let result=b/a*100;
+<!-- <script>
+    let m=prompt("Enter Your Total Number");
+    let n=prompt("Enter Your Total Number");
+    m=parseInt(m);
+    n=parseInt(n);
+    let result=n/m*100;
     if (result>33){
         document.write("pass")
     }else{
         document.write("fail")
     }
-    document.write(b/a*100);
-document.write(typeof a);
-document.write(typeof b);
+    document.write(n/m*100);
+document.write(typeof m);
+document.write(typeof n);
 let day = prompt("ENTER DAY NUMBER");
         day = parseInt(day);
         switch (day) {
@@ -42,8 +51,8 @@ let day = prompt("ENTER DAY NUMBER");
                 document.write("Tuesday");
                 break;
         }
-</script>
-
+</script> -->
+</center>
     </body>
     </html>
     
