@@ -58,35 +58,71 @@ if (result>33){
                     //      document.write("4 x "+a+" = "+4*a+"<br>");
                     //    } 
                     //    
-                    let table = prompt("ENTER  NUMBER");
-                     let a = 1; 11 >a; a++;
-    table = parseInt(table);
-    switch (table) {
-        case 2:
+    //                 let table = prompt("ENTER  NUMBER");
+    //                  let a = 1; 11 >a; a++;
+    // table = parseInt(table);
+    // switch (table) {
+    //     case 2:
        
-        for (let a = 1; 11 >a; a++){
-                      document.write("2 x "+a+" = "+2*a+"<br>");
-                      } 
-            break;
-        case 3:
+    //     for (let a = 1; 11 >a; a++){
+    //                   document.write("2 x "+a+" = "+2*a+"<br>");
+    //                   } 
+    //         break;
+    //     case 3:
         
-        for (let a = 1; 11 >a; a++){
-                      document.write("3 x "+a+" = "+3*a+"<br>");
-                      } 
-            break;
-            case 4:
+    //     for (let a = 1; 11 >a; a++){
+    //                   document.write("3 x "+a+" = "+3*a+"<br>");
+    //                   } 
+    //         break;
+    //         case 4:
         
-        for (let a = 1; 11 >a; a++){
-                      document.write("4 x "+a+" = "+4*a+"<br>");
-                      } 
-            break;
-            case 5:
+    //     for (let a = 1; 11 >a; a++){
+    //                   document.write("4 x "+a+" = "+4*a+"<br>");
+    //                   } 
+    //         break;
+    //         case 5:
         
-        for (let a = 1; 11 >a; a++){
-                      document.write("5 x "+a+" = "+5*a+"<br>");
-                      } 
-            break;
-    }
+    //     for (let a = 1; 11 >a; a++){
+    //                   document.write("5 x "+a+" = "+5*a+"<br>");
+    //                   } 
+    //         break;
+    // }
                 </script>
+                <script>
+                    let Table = prompt("Enter Table Number");
+                    Table = parseInt(Table);
+            
+                    for (let a = 1; 11 > a; a++) {
+                        document.write(Table +"x"+ a+"="+Table * a+ "<br>");
+                    }
+                    </script>
+                    <script>
+                    var totalrows =20;
+                    var output ="";
+                    for( var i = 1; i <= totalrows; i++){
+                        for (var j = 1; j <= i; j++){
+                            output += j + " ";
+                        }
+                        document.write(output);
+                        output ="<br>";
+                    }
+                    </script>
+                     <script>
+                        let value = ['HTML', 'CSS', 'Bootstrap', 'JAVASCRIPT', 'PHP'];
+                        // document.write(value[2]);
+                        // document.write(value.length);
+                        value.forEach(element => {
+                            document.write(element);
+                        });
+                    </script>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <script>
+                        value.forEach(function (x) {
+                            document.write(x + "<br>");
+                        });
+                    </script>
     </body>
 </html>
