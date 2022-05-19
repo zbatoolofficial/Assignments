@@ -28,32 +28,45 @@
 <button onclick="pow()"> power</button>
 <button onclick="exponent()"> Exponentiation</button>
 <!--  -->
-<!-- <script>
-    let m=prompt("Enter Your Total Number");
-    let n=prompt("Enter Your Total Number");
-    m=parseInt(m);
-    n=parseInt(n);
-    let result=n/m*100;
-    if (result>33){
-        document.write("pass")
-    }else{
-        document.write("fail")
-    }
-    document.write(n/m*100);
-document.write(typeof m);
-document.write(typeof n);
-let day = prompt("ENTER DAY NUMBER");
-        day = parseInt(day);
-        switch (day) {
-            case 1:
-                document.write("Monday");
-                break;
-            case 2:
-                document.write("Tuesday");
-                break;
-        }
-</script> -->
 </center>
+<!--  -->
+<h1>LOOPS</h1>
+    <h2>Different Kinds of Loops</h2>
+     <p>JavaScript supports different kinds of loops: </p>
+      <ul>  
+       <li> For - loops through a block of code a number of times </li>
+       <li> For/in - loops through the properties of an object </li>
+       <li>For/of - loops through the values of an iterable object </li>
+       <li> While - loops through a block of code while a specified condition is true </li>
+       <li> Do/while - also loops through a block of code while a specified condition is true</li>
+      </ul> 
+      <br> <br>
+        <script>
+            document.write("<b> For  Loop </b> <br>");
+            //for loops//
+            var obj = {
+                 FirstName:"ZARA",
+                 Contact:"+9200000000",
+                 City:"FAISALABAD",
+                 Zipcode:"786",
+                 Email:"zb@gmail.com",
+                 FileName:"Loop",
+            };
+            </script>
+            <script>
+            for(var a in obj){
+                document.write(a + "=" + obj [a]+ "<br>");
+            }
+            
+            </script>
+            <br>
+            <script>
+                document.write("<b> For in  Loop </b>","<br>");
+                for (var b=1; b <8 ; b++){
+                    document.write("Do Good Have Good","<br>");
+                }
+            </script>
+            
     </body>
     </html>
     
