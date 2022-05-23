@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <!-- <input type="text" id="todoinput">
+        <button id="btn">Click me</button>
+        <h1 id="head"></h1>
+    <script>
+
+        let btn = document.getElementById('btn');
+        let input = document.getElementById('todoinput');
+        let h1 = document.getElementById('head');
+        btn.addEventListener('click', function () {
+            // h1.innerText = input.value;
+            // input parseInt(input.value);
+            console.log('Done');
+            console.log(input.value);
+
+            // let z = parseInt(input.value) + parseInt(input.value);
+            // console.log(z)
+
+            if(input.value="");
+            alert("Please Write");
+        });
+
+        console.log(document.getElementById('btn'))
+        
+
+       </script> -->
+       <input type="text" id="inp1">
+       <input type="text" id="inp2">
+<script>
+       if(inp1.value == ''){
+        let x = prompt("Enter the value of Input1");
+        // console.log(typeof x +" "+ x);
+        // let k = parseInt(x);
+        let w = parseInt(x) + parseInt(inp2.value);
+        document.write(w);
+    }else if(inp2.value == ''){
+        let y = prompt("Enter the value of Input2");
+        let w = parseInt(inp1.value) + parseInt(y);
+        document.write(w);
+     }else if(inp1.value == '' && inp2.value == ''){
+        let x = prompt("Enter the value of Inputx");
+        let y = prompt("Enter the value of Inputy");
+        let w = parseInt(x) + parseInt(y);
+        document.write(w);
+     }
+   else{
+        let w = parseInt(inp1.value) + parseInt(inp2.value);
+        document.write(w);
+    }
+      </script>
+</body>
+</html>
