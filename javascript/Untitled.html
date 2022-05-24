@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1">
+    <input type="text" id="inp2">
+    <button id="btn">Click me</button>
+    <script>
+        let btn = document.getElementById("btn");
+let inp1 = document.getElementById("inp1");
+let inp2 = document.getElementById("inp2");
+
+
+btn.addEventListener('click',function(){
+    if(inp1.value == ''){
+        let x = prompt("Enter the value of Input1");
+        let w = parseInt(x) + parseInt(inp2.value);
+        document.write(w);
+    }else if(inp2.value == ''){
+        let y = prompt("Enter the value of Input2");
+        let w = parseInt(inp1.value) + parseInt(y);
+        document.write(w);    //error in this if else statement, cannot run this
+     }else if(inp1.value == ' ' && inp2.value == ' '){
+        let x = prompt("Enter the value of Inputx");
+        let y = prompt("Enter the value of Inputy");
+        let w = parseInt(x) + parseInt(y);
+        document.write(w);
+     }
+   else{
+        let w = parseInt(inp1.value) + parseInt(inp2.value);
+        document.write(w);
+    }
+
+});
+    </script>
+</body>
+</html>
