@@ -5,9 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="j6.css">
 </head>
 <body>
-    <ol id="oder">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        #todoinput{
+            width: 60%;
+            height: 45px;
+        }
+        #btn {
+            background-color:red;
+            color: white;
+            width: 90px;
+            height: 50px;
+            font-size: 20px;
+            margin-left: 2%;
+            border-color: rgb(8, 8, 8);
+        }
+    
+        #btn:hover {
+            background-color: rgb(255, 179, 0);
+        }
+    
+        .main input {
+            width: 40%;
+            height: 40px;
+            margin-top: 4%;
+            margin-left: 3%;
+        }
+    
+        .main {
+            background-color: rgba(0, 0, 0, 0.773);
+            height: 50vh;
+            width: 100%;
+            margin-top: 2%;
+        }
+        .main button{
+            background-color: rgba(43, 98, 8, 0.796);
+            color: white;
+            width: 85px;
+            height: 40px;
+            margin-left: 2%;
+            border-color: black;
+        }
+        .main button:nth-child(2){
+            background-color:  greenyellow ;
+        }
+    </style>
+    <!-- <ol id="oder">
 
     </ol>
     <input type="text" id="todoinput">
@@ -45,6 +94,59 @@
             li.appendChild(edit);
             ol.appendChild(li);
             console.log(input);
+        });
+       
+    </script> -->
+    <center>
+        <h1>😲  •---•» 𝕋𝕆𝔻𝕆𝕃𝕀𝕊𝕋 «•---•  😲 </h1>
+        <div class="main">
+    <input type="text" placeholder="ENTER TEXT" id="todoinput">
+    <button id="btn">Add</button>
+    <ul id="unorder">
+
+    </ul></div>
+    </center>
+    <script>
+        let input = document.getElementById('todoinput');
+        let btn = document.getElementById('btn');
+        let ul = document.getElementById('unorder');
+        btn.addEventListener('click', function () {
+            let li = document.createElement('li');
+            let todoinput = document.createElement('input');
+            todoinput.setAttribute('type', 'text');
+            todoinput.setAttribute('value', input.value);
+            todoinput.setAttribute('readonly', 'readonly');
+            li.appendChild(todoinput);
+            let edit = document.createElement('button');
+            edit.innerHTML = 'EDIT';
+            let del = document.createElement('button');
+            del.innerHTML = 'DELETE';
+            li.appendChild(del);
+            li.appendChild(edit);
+            ul.appendChild(li);
+            input.value = '';
+            console.log(li);
+            edit.addEventListener('click', function () {
+                if (edit.innerHTML == 'EDIT') {
+                    todoinput.removeAttribute('readonly', 'readonly');
+                    edit.innerHTML = 'Save';
+                } else {
+                    todoinput.setAttribute('readonly', 'readonly');
+                    edit.innerHTML = 'EDIT';
+                }
+
+            })
+            del.addEventListener('click', function () {
+                let veri = confirm("Are Your Sure");
+                if (veri) {
+                    ul.removeChild(li);
+
+                } else {
+                    alert("Not Sure");
+                }
+            });
+
+
         });
     </script>
 </body>
