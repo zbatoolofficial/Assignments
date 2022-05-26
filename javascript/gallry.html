@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery filter</title>
+</head>
+<body>
+    <!--  -->
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3535355a;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  color: darkgreen;
+  font-style:oblique;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgba(253, 172, 10, 0.192);
+  padding: 10px;
+  font-size: 30px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+    </style>
+    <!--  -->
+    <center>
+    <h1> ..... 𝒢𝒶𝓁𝓁𝑒𝓇𝓎 𝐹𝒾𝓁𝓉𝑒𝓇 .....</h1>
+<div id="myBtnContainer">
+ <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('light')"> light</button>
+  <button class="btn" onclick="filterSelection('Green')"> Green</button>
+</div> 
+<!-- <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                <ul class="d-flex justify-content-center bg-primary align-item-center list-unstyled">
+                    <li class="item p-2 data-item=Laptop">
+                        <img src="1.jpg" class="img-fluid" alt="...">    
+                        Laptop
+                    </li>
+                    <li class="item p-2 data-item=Bag">Bag</li>
+                    <li class="item p-2 data-item=Shoes">Shoes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        let item = document.getElementsByClassName('item');
+            // console.log (item);
+        for(let a=0;item.length>a;a++){
+item[a].addEventListener('click',function(){
+    for(let k=0;item.length>k;k++){
+ item[k].classList.remove('bg-danger');
+    };
+    item[a].classList.add('bg-danger');
+    let getitem = item[a].getAttribute('data-item');
+    console.log(getitem);
+});
+        };
+    </script> -->
+</center>
+<!-- Portfolio Gallery Grid -->
+<br> <br>
+<center>
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="1.jpg" width ="50%" hight="50%">
+      <h4>Green</h4>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="2.jpg" width ="50%" hight="50%">
+      <h4>Lights</h4>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="3.jpg"  width ="50%" hight="50%">
+      <h4>Forest</h4>
+    </div>
+  </div>
+
+  <div class="column light">
+    <div class="content">
+        <img src="1.jpg"  width ="50%" hight="50%">
+        <h4>Lights</h4>
+    </div>
+  </div>
+  <div class="column light">
+    <div class="content">
+        <img src="2.jpg"  width ="50%" hight="50%">
+        <h4>Lights</h4>
+    </div>
+  </div>
+  <div class="column light">
+    <div class="content">
+        <img src="2.jpg"  width ="50%" hight="50%">
+        <h4>Lights</h4>
+    </div>
+  </div>
+
+  <div class="column Green">
+    <div class="content">
+        <img src="3.jpg"  width ="50%" hight="50%">
+        <h4>Lights</h4>
+    </div>
+  </div>
+  <div class="column Green">
+    <div class="content">
+        <img src="2.jpg"  width ="50%" hight="50%">
+        <h4>Lights</h4>
+    </div>
+  </div>
+  <div class="column Green">
+    <div class="content">
+        <img src="1.jpg"  width ="50%" hight="50%">
+        <h4>Lights</h4>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+</center>
+<!--  -->
+<script>
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }4
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</body>
+</html>
