@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        .ParentIMG {
+            height: 90vh;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ParentIMG">
+                <img src="1.jpg" height="100%" width="100%" alt="">
+                <img src="2.jpg" height="100%" width="100%" alt="">
+                <img src="3.jpg" height="100%" width="100%" alt="">
+                <img src="4.jpg" height="100%" width="100%" alt="">
+                <img src="1.jpg" height="100%" width="100%" alt="">
+                <img src="2.jpg" height="100%" width="100%" alt="">
+                <img src="4.jpg" height="100%" width="100%" alt="">
+                <img src="3.jpg" height="100%" width="100%" alt="">
+
+
+            </div>
+        </div>
+    </div>
+    <ul id="unorder">
+        <li></li>
+    </ul>
+
+
+
+
+    <button onclick="next(1)">Nxt</button>
+    <button onclick="next(-1)">Pre</button>
+    <script>
+        let img = document.getElementsByTagName('img');
+
+        let ul = document.getElementById('unorder');
+        for (let i = 0; img.length > i; i++) {
+            let button = document.createElement("button");
+            button.innerHTML = 'Add me';
+            button.setAttribute('onclick', 'silder('+i+')');
+            console.log(button);
+            ul.appendChild(button);
+
+            // ul.append(i);
+        }
+        console.log(img);
+
+        let arr = 0;
+
+
+        function next(n) {
+            arr = arr + n;
+            if (arr >= img.length) {
+                arr = 0;
+            }
+            if (arr < 0) {
+                arr = img.length - 1;
+            }
+            console.log(arr);
+            silder(arr);
+        }
+        silder(0);
+
+        function silder(r) {
+            for (let a = 0; img.length > a; a++) {
+                img[a].style.display = 'none';
+
+            }
+
+            img[r].style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
