@@ -13,7 +13,7 @@
         background:whitesmoke;
         }
         
-        .cont{
+        .container{
         position:relative;
         width:100%;
         padding:0;
@@ -21,7 +21,7 @@
         text-align:center;
         }
         .calsi{
-        width:350px;
+        width:400px;
         padding:0;
         margin:100px auto;
         text-align:center;
@@ -43,7 +43,7 @@
         #inp{
         position:relative;
         width:100%;
-        padding:10px 0px;
+        padding:30px 0px;
         text-align:center;
         font-size:16px;
         font-family:arial;
@@ -61,6 +61,7 @@
         .btns button{
         border:none;
         outline:none;
+        box-shadow: 5px 0px 0px 5px rgba(10, 10, 10, 0.71);
         width:50px;
         height:50px;
         font-size:30px;
@@ -74,10 +75,11 @@
         button{
         border:none;
         outline:none;
-        width:100px;
+        width:73px;
         height:50px;
         font-size:20px;
         color:#222;
+        box-shadow: 0px 0px 0px 5px rgba(10, 10, 10, 0.71);
         border-radius:5px;
         vertical-align:middle;
         background:white;
@@ -85,7 +87,7 @@
         display:inline-block;
         }
         </style>
-        <div class="cont">
+        <div class="container">
         <div class="calsi">
         <h1>Calculator</h1>
         <input type="text" id="inp" placeholder="Enter Value..." readonly="">
@@ -113,7 +115,7 @@
          <button onclick="exe()">=</button>
         <button onclick="cancel()">⌫</button>
         <button onclick="cls()">c</button>
-        </div>
+        </div></div>
         <script>var val=document.getElementById("inp");
         
         function AT_add(v){
