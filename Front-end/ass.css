@@ -1,0 +1,11 @@
+.navbar{
+  background-color:white;
+  color: black;
+  font-weight: bold;
+}
+.liover:hover{
+ background-color: 	#ffc107;
+  cursor: pointer; 
+  
+}
+
